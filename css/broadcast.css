@@ -1,0 +1,114 @@
+/* 大背景色 */
+.bro-page {background:#f5f5f5;}
+/************************************************************************/
+/* 直播模块 */
+.tv-online {
+	width:100%;
+	background:#fff;
+}
+/************************************************************************/
+.tv-online ,
+.tv-online img {
+	height:10.1334rem ;
+}
+/* 机构logo */
+.company-logo {
+	width: 100%; 
+	margin-top:0.3334rem;
+	background:#fff;
+}
+.company-logo ,
+.company-logo img {	
+	height: 3.2rem;
+}
+/************************************************************************/
+/* 用户互动模块 */
+.content-box {  
+	    margin-top: 0.34rem;
+	    position: static;
+	    padding:0  0.7rem 0.7rem 0.7rem;
+    	background: #fff;
+}
+
+.buttons-pad {
+	padding: 0 2rem;
+}
+.buttons-tab .button-col { 
+	color:#bebebe ;
+}
+.buttons-tab .button.active { 
+	/* 更改原样式 */
+	color:#5eb5dd ;
+}
+.content-mg { 
+	padding: 0;
+	margin: 0;
+}
+/* 用户组 */
+.user-list {
+	padding: 0.4rem 0; 
+	overflow: hidden;
+	border-bottom:1px dashed #eeeeee;
+} 
+.content-block p ,
+.user-list p {
+	margin: 0.3rem 0;
+	font-size: 0.7rem;
+}
+/* 用户头像 */
+.user-head ,
+.user-head img{
+	width:  1.4334rem;
+	height: 1.4334rem;
+}
+.user-head {
+	float: left;
+	margin:  0.5rem;
+}
+.user-dis {float: left; }
+.user-name { color:#202020; }
+.user-msg  { color:#616060; margin-left: 0.3rem; } 
+.user-list p.user-last-time { color:#bbbaba;   font-size: 0.6rem;}
+
+.past-program { overflow: hidden; }
+.past-program p{ border-bottom: 1px dashed #eeeeee;    padding: 0.3rem;}
+/************************************************************************/
+.bar-color { 
+	border-top: 1px solid #5db3dc;
+	background: #fff; 
+}
+.bar-tab .tab-item .icon-shares{
+	padding: 0;
+	width:  1.0667rem;
+	height: 1.2334rem;
+}
+.bar-tab .tab-item .icon-like {
+	padding: 0;
+	width:  1.35rem;
+	height: 1.1667rem;
+}
+.bar-tab .tab-item .icon-direct {
+	padding: 0;
+	width:  1.25rem;
+	height: 1.1rem;
+}
+/************************************************************************/
+
+
+
+/************************************************************************/
+/* @media only screen and (min-width: 414px) {
+  .tv-online {
+		height:11.525rem ;
+	}
+}
+@media only screen and (min-width: 375px) and (max-width:413px ) {
+  .tv-online {
+		height:11.5rem ;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:374px ) {
+  .tv-online {
+		height:9rem ;
+	}
+} */

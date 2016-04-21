@@ -1,23 +1,11 @@
-.priv-page {
-	background:#fff;
-}
+
 .home-logo {
 	width: 13.5833rem;
 	height: 12.3833rem;
 	margin: 0 auto;
 	margin-top:3.0667rem;
 }
-img { width: 100%; height: auto; }
-/* .home-logo img{
-	width: 13.5833rem;
-	height: 12.3833rem;
-} */
-.title {
-	font-size: 1.6667rem;
-	font-family: "Heiti SC";
-	margin-top:1.5rem;
-	color:#3296c9;
-}
+
 .home-title {
 	width: 10.3rem;
 	height: 1.6rem;
@@ -34,7 +22,6 @@ img { width: 100%; height: auto; }
 	margin: 0 auto;
 	margin-top:5.3rem;
 	color: #fff;
-	font-family: "Heiti SC";
 	background: -webkit-linear-gradient(top,#bbe4f9,#9ad7f6);
 	               -moz-linear-gradient(top,#bbe4f9,#9ad7f6);
 						linear-gradient(top,#bbe4f9,#9ad7f6);
