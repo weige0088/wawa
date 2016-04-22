@@ -24,6 +24,70 @@
 /************************************************************************/
 .introduce {
 	padding: 0 0.7rem  0.7rem  0.7rem ;
+	background: #fff;
+}
+.state {
+	width: 100%; 
+	overflow: hidden;
+	padding:  0.4rem;
+	border-bottom: 1px dashed #eeeeee;
+}
+.state span {
+	vertical-align: bottom;
+	display: inline-block;
+	font-size: 0.467rem;
+}
+.icons-feedback ,.icons-collection ,.icons-user-num ,.icons-user-like 
+{	
+	vertical-align: baseline;
+	float: left;
+	line-height: 0.7rem;
+    height: 0.7rem;
+}
+.icons-feedback ,.icons-collection ,.icons-user-num  { margin-right: 6px; }
+.icons-user-like { float: right; }
+.icons-feedback img {
+	width: 0.667rem; 
+}
+
+.icons-collection img  {
+	width: 0.75rem; 
+}
+
+.icons-user-num img {
+	width: 0.667rem;
+}
+
+.icons-user-like img {
+	width: 0.75rem;
+}
+
+.icons-feedback img,
+.icons-collection img ,
+.icons-user-num img ,
+.icons-user-like img {
+	height: 0.7rem;
+}
+
+
+
+.describe {
+	width: 100%;
+	padding: 0.4rem;
+	padding-bottom: 0;
+}
+.describe p {
+	font-size: 0.7rem;
+	margin: 0;
+	line-height: 1.2;
+}
+.describe .hostess ,
+.describe .about{
+	color: #000000;
+}
+.describe .doctor ,
+.describe .dimension{
+	color: #717171;
 }
 /************************************************************************/
 /* 用户互动模块 */
@@ -97,8 +161,29 @@
 	height: 1.1rem;
 }
 /************************************************************************/
-
-
+.screen-mask { 
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+	background: rgba(0,0,0,0.65);
+	z-index: 9999;
+}
+.sign-success ,
+.sign-success img {
+	 width: 9.8667rem;
+	 height: 6.9834rem;
+}
+.sign-success {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.4915rem;
+	margin-left: -4.933rem;
+}
 
 /************************************************************************/
 /* @media only screen and (min-width: 414px) {
