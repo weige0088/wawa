@@ -5,11 +5,11 @@
 .logo-box { 
 	position: absolute;
 	width:11.5334rem ;
-	height:15.3834rem ;
+	height:19.3834rem ;
 	top: 9.3667rem;
     left: 50%;
     margin-left: -5.75rem;
-	background: url(../images/logo-box.png) top center no-repeat #98d9f8;
+	background: url(../images/logo-box.png) top center no-repeat ;
 	background-size: cover;
 }
 .user-account ,
@@ -83,6 +83,7 @@
 	bottom: 0;
 	background: url(../images/cloud.png) top center no-repeat ;
 	background-size: cover;
+	background-position: 0 .4rem;
 }
 .three-method {
 	width:13.3167rem ;

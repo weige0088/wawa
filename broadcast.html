@@ -12,12 +12,17 @@
 	<link rel="stylesheet" href="css/sm.css">
     <link rel="stylesheet" href="css/common.css">  
 	<link rel="stylesheet" href="css/broadcast.css"> 
-        
+    <style type="text/css">
+        .screen-mask {
+
+        }
+    </style>  
 </head>
 <body>
 	<div class="page-group">
-        <div class="page page-current bro-page ">
+        <div class="page page-current bro-page  ">
         <!-- 你的html代码 -->
+           
             <div class="tv-online">
                 <img src="images/tv-online.jpg">
             </div>
@@ -56,11 +61,15 @@
                     <p><span class="hostess">主  讲  人 ：</span><span class="doctor">韩红梅博士</span></p>
                     <p><span class="about">内容简介：</span><span class="dimension">壮娃娃健康管理机构，简称“壮娃娃” ...</span></p>
                 </div>
-            </div>	
+            </div>  
             <!-- 机构logo -->
             <div class="company-logo">
                 <img src="images/company-logo.jpg">
             </div>
+
+          
+            
+            
             <!-- tab模块 -->
             <div class="content content-box">
               <div class="buttons-tab buttons-pad">
@@ -71,7 +80,7 @@
                 <div class="tabs">
                   <!-- 互动聊天模块 -->
                   <div id="tab1" class="tab active">
-                    <div class="content-block content-mg">
+                    <div class="content-block content-mg content-height" data-toggle="scroller" data-type="auto" >
                         <!-- 用户组 -->
                         <div class="user-list">
                             <!-- 用户头像 -->
@@ -188,19 +197,35 @@
                   </div>
                   <!-- 往期节目模块 -->
                   <div id="tab2" class="tab">
-                    <div class="content-block content-mg">
+                    <div class="content-block content-mg content-height" data-toggle="scroller" data-type="auto">
                         <div class="past-program">
                           <p>往期节目——专家讲座1...</p>
                           <p>往期节目——专家讲座2...</p>
                           <p>往期节目——专家讲座3...</p>
                           <p>往期节目——专家讲座4...</p>
                           <p>往期节目——专家讲座5...</p>
+                          <p>往期节目——专家讲座6...</p>
+                          <p>往期节目——专家讲座7...</p>
+                          <p>往期节目——专家讲座8...</p>
+                          <p>往期节目——专家讲座9...</p>
+                          <p>往期节目——专家讲座10...</p>
+                          <p>往期节目——专家讲座11...</p>
+                          <p>往期节目——专家讲座12..</p>
+                          <p>往期节目——专家讲座13...</p>
+                          <p>往期节目——专家讲座14...</p>
+                          <p>往期节目——专家讲座15...</p>
+                          <p>往期节目——专家讲座16...</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+               
+                
+            
+                       
             
                 <nav class="bar bar-tab bar-color">
                   <a class="tab-item external" href="#">
@@ -235,5 +260,15 @@
     <!-- 遮罩end -->
 	<script src="js/zepto.js"></script>
 	<script src="js/sm.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#screen-mask").on("click",function(){
+                $(this).css("display","none"); 
+                $(this).remove($(this).children);
+                
+
+            })
+        });
+    </script>
 </body>
 </html>

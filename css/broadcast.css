@@ -23,7 +23,7 @@
 }
 /************************************************************************/
 .introduce {
-	padding: 0 0.7rem  0.7rem  0.7rem ;
+	padding: 0 0.5rem  0.7rem  0.5rem ;
 	background: #fff;
 }
 .state {
@@ -112,6 +112,11 @@
 	padding: 0;
 	margin: 0;
 }
+
+.content-height {
+	height: 12rem;
+	overflow: auto;
+}
 /* 用户组 */
 .user-list {
 	padding: 0.4rem 0; 
@@ -169,8 +174,25 @@
 	left: 0;
 	width:  100%;
 	height: 100%;
-	background: rgba(0,0,0,0.65);
+	
 	z-index: 9999;
+}
+.bj{position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+	background: rgba(0,0,0,.65);
+	z-index: 9999;
+	-webkit-animation: bjcolor .3s linear   ;
+	-o-animation: bjcolor .3s linear   ;
+	animation: bjcolor .3s linear  ;
+}
+@keyframes bjcolor {
+	0%{ background: rgba(0,0,0,0) }
+	100%{ background: rgba(0,0,0,.65) }	
 }
 .sign-success ,
 .sign-success img {
@@ -178,11 +200,21 @@
 	 height: 6.9834rem;
 }
 .sign-success {
+	-webkit-animation: success .3s linear  ;
+	-o-animation: success .3s linear  ;
+	animation: success .3s linear   ;
+	z-index: 9999;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -3.4915rem;
 	margin-left: -4.933rem;
+	
+}
+
+@keyframes success {
+	0%{ transform: scale(1.2); }
+	100%{ transform: scale(1);} 
 }
 
 /************************************************************************/
@@ -195,9 +227,14 @@
   .tv-online {
 		height:11.5rem ;
 	}
-}
+}*/
 @media only screen and (min-width: 320px) and (max-width:374px ) {
-  .tv-online {
-		height:9rem ;
+	.tv-online ,
+	.tv-online img{
+		
+		height:8.5rem ;
 	}
-} */
+	.user-dis {
+  		width: 83%;
+  	}
+} 
