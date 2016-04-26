@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection,email=no" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>sigin in 用户登录</title>
+	<!-- <link rel="Shortcut Icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="../css/sm.css">
+    <link rel="stylesheet" href="../css/common.css">  
+	<link rel="stylesheet" href="../css/sign-in.css"> 
+        
+</head>
+<body>
+	<div class="page-group">
+        <div class="page page-current page-signin">
+        <!-- 你的html代码 -->
+            <div class="logo-box">
+                <form>
+                    <div class="user-account">
+                        <label for="user-id">账号 :</label>
+                        <input type="text"  name="user-id" id="user-id">
+                    </div>
+                    <div class="user-pwd">
+                        <label for="user-pwd">密码 :</label>
+                        <input type="text" name="user-pwd" id="user-pwd">
+                    </div>
+                    <div class="btn">
+                        <div class="btn-submit">登录</div>
+                        <a class="register">注册</a>
+                    </div>
+                </form>
+            </div>  
+            <div class="sign-method">
+                <div class="three-method">
+                    <img src="../images/sign-methods.png">
+                </div>
+                <div class="three-sign-icon">
+                    <div class="icons"><img src="../images/icons_qq.png"></div>
+                    <div class="icons"><img src="../images/icons_weibo.png"></div>
+                    <div class="icons icons-weixin"><img src="../images/icons_weixin.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<script src="../js/zepto.js"></script>
+	<script src="../js/sm.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".btn-submit").on("click",function(){
+                window.open("broadcast.html");
+            })
+        })
+    </script>
+</body>
+</html>
