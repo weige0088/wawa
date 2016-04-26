@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection,email=no" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>welcome</title>
+	<!-- <link rel="Shortcut Icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/common.css">  
+	<link rel="stylesheet" href="css/index.css"> 
+        
+</head>
+<body>
+	<div class="page-group">
+        <div class="page page-current priv-page">
+        <!-- 你的html代码 -->
+        	<div class="home-logo">
+        		<img src="images/home-logo.jpg">
+        	</div>
+        	<div class="home-title">
+        		<img src="images/home-title.jpg">
+        	</div>
+        	<div class="btn-enter">
+        		点击进入
+        	</div>
+        </div>
+    </div>
+
+
+	<script src="js/zepto.js"></script>
+	<script src="js/sm.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".btn-enter").on('click',function(){
+                window.open("sign-in.html");
+            });
+        })
+    </script>
+</body>
+</html>
