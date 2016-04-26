@@ -89,6 +89,9 @@
 .describe .dimension{
 	color: #717171;
 }
+.dimension-inner {
+	display: none;
+}
 /************************************************************************/
 /* 用户互动模块 */
 .content-box {  

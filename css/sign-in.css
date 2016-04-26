@@ -6,7 +6,7 @@
 	position: absolute;
 	width:11.5334rem ;
 	height:19.3834rem ;
-	top: 9.3667rem;
+	top: 8.3667rem;
     left: 50%;
     margin-left: -5.75rem;
 	background: url(../images/logo-box.png) top center no-repeat ;
@@ -106,3 +106,8 @@
 }
 .icons { margin-right: 28.222%; float: left; }
 .icons-weixin {margin-right: 0; float: right; }
+
+@media only screen and (min-width: 320px) and (max-width:374px ) {
+	.logo-box {top: 8rem; }
+	.sign-method { background-position: 0 .6rem;}
+} 

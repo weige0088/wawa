@@ -59,7 +59,9 @@
                 </div>
                 <div class="describe">
                     <p><span class="hostess">主  讲  人 ：</span><span class="doctor">韩红梅博士</span></p>
-                    <p><span class="about">内容简介：</span><span class="dimension">壮娃娃健康管理机构，简称“壮娃娃” ...</span></p>
+                    <p class="about"><span >内容简介：</span><span class="dimension">壮娃娃健康管理机构，简称“壮娃娃” ...</span>
+                    <span class="dimension-inner">内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介</span>
+                    </p>
                 </div>
             </div>  
             <!-- 机构logo -->
@@ -226,7 +228,7 @@
                 
             
                        
-            
+             <!-- 底部三个图标 -->
                 <nav class="bar bar-tab bar-color">
                   <a class="tab-item external" href="#">
                     <span class="icon icon-shares">
@@ -262,11 +264,20 @@
 	<script src="js/sm.js"></script>
     <script type="text/javascript">
         $(function() {
+            $(".about").on("click",function(){
+                var dimensionInner  = $(this).children(".dimension-inner");
+                if(dimensionInner.css("display") == "none"){
+                    $(this).children(".dimension").css("display","none")
+                    dimensionInner.show();
+                }else{
+                    dimensionInner.hide();
+                    $(this).children(".dimension").css("display","inline-block")   
+                }
+            });
+            
             $("#screen-mask").on("click",function(){
                 $(this).css("display","none"); 
                 $(this).remove($(this).children);
-                
-
             })
         });
     </script>
