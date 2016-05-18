@@ -23,7 +23,7 @@
 	margin-top:4.3rem;
 	color: #fff;
 	background: -webkit-linear-gradient(top,#bbe4f9,#9ad7f6);
-	               -moz-linear-gradient(top,#bbe4f9,#9ad7f6);
-						linear-gradient(top,#bbe4f9,#9ad7f6);
+	background:    -moz-linear-gradient(top,#bbe4f9,#9ad7f6);
+	background:		    linear-gradient(top,#bbe4f9,#9ad7f6);
 
 }

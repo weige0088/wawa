@@ -1,0 +1,134 @@
+html , body {
+	font-size: 62.5%;
+	font-family:"微软雅黑","Microsoft YaHei",sans-serif;
+}
+
+.warp{width: 100%;
+	height: 100%;
+	background: ;}
+.top { 
+	position: relative;
+	width: 100%; 
+	height: 20%; 
+	background: #fff;
+}
+.log {
+	position: relative;
+	width: 100%;
+	height: 55%;
+	background: url(../images/log-bj.png) top center no-repeat  #98d9f8;
+	background-size: 100%;
+}
+.icon-company {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+ 	/* float: left; */
+}
+.icon-company , .icon-company img { 
+	width: 228px ;
+}
+.img-lf {
+	position: absolute;
+	top: 17%;
+	right: 10%;
+}
+.img-lf , .img-lf img {
+	width: 125px ;
+}
+
+.log {
+
+}
+.log-tit {
+	width: 325px;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+}
+.login {
+	width: 414px;
+	position: absolute;
+	top: 8%;
+	right: 10%;
+
+}
+.login-bj {
+
+}
+.login-box {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 66px 44px 0 70px;
+	box-sizing: border-box;
+}
+.user-infor {
+	height: 30px;
+	padding: 6px 12px;
+	line-height: 30px;
+	border:1px solid #e3e3e3;
+	border-radius: 10px;
+	margin-top:20px; 
+	-webkit-box-shadow: inset 0 2px 3px #e3e3e3;
+	   -moz-box-shadow: inset 0 2px 3px #e3e3e3;
+	    -ms-box-shadow: inset 0 2px 3px #e3e3e3;
+	        box-shadow: inset 0 2px 3px #e3e3e3;
+}
+.user-infor label {width: 20%; color: #d9d9d9;}
+.user-infor input {
+	width: 70%;
+	outline: none;
+	height: 30px;
+	color: #b2b2b2;
+	line-height: 30px;
+	border:none;
+	padding: 0 6px;
+}
+.user-infor label ,
+.user-infor input {
+	display: inline-block;
+	float: left;
+
+}
+.btn {
+	font-size: 22px;
+	margin-top: 20px;
+}
+.btn-submit {
+	display: inline-block;
+	padding: 6px 44px;
+	background: #7ecaee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7ecaee 0%, #67bee6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7ecaee 0%,#67bee6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7ecaee 0%,#67bee6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ecaee', endColorstr='#67bee6',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 8px;
+	color: #fff;
+	margin:0 20px 0  70px;
+
+}
+.register {
+	border-bottom: 1px solid #7ecaee;
+    color: #7ecaee;
+}
+@media only screen and (min-height: 769px)  {
+	.icon-company {
+		top: 25%;
+    	left: 15%;
+	}
+	.img-lf {
+		top: 27%;
+    	right: 15%;
+	}
+	.log-tit {
+		top: 40%;
+    	left: 25%;
+	}
+	.login {
+		right: 15%;
+    	top: 25%;
+	}
+} 

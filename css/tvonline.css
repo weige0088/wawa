@@ -1,0 +1,129 @@
+.media-corner {
+
+}
+.media-list-self {
+	background: #fff;
+    margin-top: 1rem ;
+    font-size: 0.85rem;
+    padding-bottom: 1rem;
+}
+.list-block .item-self {
+	padding: 0;
+	margin: 0 0.75rem;
+	border-bottom: 1px dashed #ccc;
+}
+.list-block .item-link .item-inner-self {
+	padding-right: 0;
+	 background-image:none;
+}
+
+.item-course {
+	font-size: 0.75rem;
+	color: #7f7f7f;
+}
+.list-block .speaker {
+	padding-top: 4px;
+	font-size: 0.55rem;
+	color: #7f7f7f;
+}
+.speech-date {
+	display: inline-block;
+	float: left;
+	font-size: 0.55rem;
+	color: #c6c6c6;
+	padding-top: 4px;
+}
+.btn {
+	display: inline-block;
+	float: right;
+	font-size: 0.7rem;
+	width: 3.8rem;
+    height: 1.4rem;
+    text-align: center;
+    line-height: 1.4rem;
+	color: #fff;
+	background: #98d9f7;
+	border-radius: 15px;
+}
+
+.list-block  .item-text-self {display: block;}
+.media-corner{
+    position: absolute;
+    width: 100%;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    
+    font-size: 0.35rem;
+    color: #fff;
+    transform: rotate(-40deg) translateY(-10px) translatex(-25px);
+    text-align: center;
+}
+.list-block.media-list .item-media-self {
+	position: relative;
+	padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0.45rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.list-block .item-media-self {
+	    padding-top: 0;
+	    margin-top: 0.35rem;
+}
+.btn-ent   {background: #98d9f7;}
+.btn-wait  {background: #f67373;}
+.btn-end   {background: #eaeaea;}
+
+.btn-add   {background: #98d9f7;}
+.btn-addtoo{background: #6c98ea;}
+
+.media-soonstart{background: #f8c13e;}
+.media-wait     {background: #a2cadc;}
+.media-end      {background: #bcbcbc;}
+
+
+
+.add-listen { 
+	width: 100%; 
+	font-size: 0.8rem;
+	background: #fff;
+	
+	padding:0.4rem 1.4rem;
+	text-align: center;
+	overflow: hidden;
+}
+.add-already {
+	width: 20%;
+	height: 2rem;
+	line-height: 2rem;
+	color: #000;
+	float: left;
+}
+.add-box {
+	width:80% ;
+	height: 2rem;
+	line-height: 2rem;
+	color: #a7def8;
+	float: left;
+}
+.add-box-choice {
+	line-height: 1rem;
+	color: #dadada;
+}
+.course {
+	margin-right: 20px;
+    display: inline-block;
+}
+
+.sub-box {
+	width: 100%;
+	height: 2rem;
+	margin-top:0.6rem;
+	padding: 0 2.8rem;
+}
+
+.button-sub {
+	height: 2rem;
+	border-radius: 50px;
+}
+.button.button-sub {font-size:1rem;line-height: 2rem;}

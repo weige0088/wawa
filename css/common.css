@@ -6,3 +6,54 @@ img { width: 100%; height: auto; }
 .priv-page {
 	background:#fff;
 }
+.screen-mask { 
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+	
+	z-index: 9999;
+}
+.bj{position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+	background: rgba(0,0,0,.65);
+	z-index: 9999;
+	-webkit-animation: bjcolor .3s linear   ;
+	-o-animation: bjcolor .3s linear   ;
+	animation: bjcolor .3s linear  ;
+}
+@keyframes bjcolor {
+	0%{ background: rgba(0,0,0,0) }
+	100%{ background: rgba(0,0,0,.65) }	
+}
+.sign-success ,
+.sign-success img {
+	 width: 9.8667rem;
+	 height: 6.9834rem;
+}
+.sign-success {
+	-webkit-animation: success .3s linear  ;
+	-o-animation: success .3s linear  ;
+	animation: success .3s linear   ;
+	z-index: 9999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.4915rem;
+	margin-left: -4.933rem;
+	
+}
+
+@keyframes success {
+	0%{ transform: scale(1.2); }
+	100%{ transform: scale(1);} 
+}
+.screen-mask { display: none; }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection,email=no" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>调查问卷</title>
+	<!-- <link rel="Shortcut Icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/common.css">  
+	<link rel="stylesheet" href="css/question.css"> 
+    <script src="js/vconsole.min.js"></script>
+    <style type="text/css">
+    </style>  
+</head>
+<body>
+	<div class="page-group">
+        <div class="page page-current bro-page  ">
+        <!-- 你的html代码 -->
+            <div class="content">
+                <div class="qa-box">
+                <div class="logo"><img src="images/qa-bj2.png"></div>
+                    <div class="titles">第37课 手足口病凶猛来袭，做好准备心不慌</div>
+                    <div class="art">
+                        <p>主讲人：黄红梅博士</p>
+                        <p class="txt-ind">主讲人黄红梅博士主讲人黄红梅博士主讲人黄红梅博士主讲人黄红梅博士主讲人黄红梅博士主讲人黄红梅博士主讲人黄红梅博士主讲人黄红梅博士.</p>
+                    </div>
+                    <div class=" list-block ask">
+                        <div class="ask-title">
+                            <img src="images/trees.png"><span>您对我们的课程有什么看法或者建议？</span>
+                        </div>
+                        <div class="ask-txt">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-submit" id="submit">
+                       提交 
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- 登录成功遮罩层 -->
+  <div class="screen-mask" id="screen-mask">
+      <div class="bj"></div>
+      <div class="sign-success">
+          <img src="images/sign-succen.png">
+      </div>
+  </div>
+    <!-- 遮罩end -->
+	<script src="js/zepto.js"></script>
+	<script src="js/sm.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#submit").on("click",function(){
+                console.log(123);
+                $("#screen-mask").css("display","block");
+            });
+            $("#screen-mask").on("click",function(){
+                $(this).css("display","none"); 
+                //$(this).remove($(this).children);
+            })
+        });
+    </script>
+</body>
+</html>

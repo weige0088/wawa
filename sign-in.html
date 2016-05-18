@@ -19,30 +19,80 @@
         <div class="page page-current page-signin">
         <!-- 你的html代码 -->
             <div class="logo-box">
-                <form>
-                    <div class="user-account">
-                        <label for="user-id">账号 :</label>
-                        <input type="text"  name="user-id" id="user-id">
-                    </div>
-                    <div class="user-pwd">
-                        <label for="user-pwd">密码 :</label>
-                        <input type="text" name="user-pwd" id="user-pwd">
-                    </div>
-                    <div class="btn">
-                        <div class="btn-submit">登录</div>
-                        <a class="register">注册</a>
-                    </div>
-                </form>
+                <!--  -->
+                <div class="log-methed">
+                    <div class="log-way account-login">账号登录</div>
+                    <div class="log-way Verify-log">验证码登录</div>
+                </div>
+                <!-- 正常用户登录 -->
+                <div class="sin-box">
+                    <form>
+                        <div class="infor-box">
+                            <label for="user-id">账号 :</label>
+                            <input type="text"  name="user-id" id="user-id">
+                        </div>
+                        <div class="infor-box infor-pwd">
+                            <label for="user-pwd">密码 :</label>
+                            <input type="text" name="user-pwd" id="user-pwd">
+                        </div>
+                        <div class="infor-box infor-btn">
+                            <div class="btn-submit">登录</div>
+                            <div class="register">注册</div>
+                        </div>
+                    </form>   
+                </div>
+               <!-- 验证码登录 -->
+                <div class="yanzheng-box">
+                    <form>
+                        <div class="num-box">
+                            <div class="num-phon">
+                                <input type="text"  name="" id="" placeholder="请输入手机号">
+                            </div>
+                            <div class="ma">获取验证码</div>
+                        </div>
+                        
+                        <div class="infor-box infor-pwd"> 
+                            <input type="text" name="" id="" placeholder="请输入验证码">
+                        </div>
+                        <div class="infor-box infor-btn">
+                            <div class="btn-submit">登录</div>
+                            <div class="register">注册</div>
+                        </div>
+                    </form>   
+                </div>
+                <!-- 新用户注册 -->
+                 <div class="regist-box">
+                    <form>
+                        <div class="num-box">
+                            <div class="num-phon">
+                                <input type="text"  name="" id="" placeholder="请输入手机号">
+                            </div>
+                            <div class="ma">获取验证码</div>
+                        </div>
+                        
+                        <div class="infor-box infor-pwd"> 
+                            <input type="text" name="" id="" placeholder="请输入验证码">
+                        </div>
+                        <div class="infor-box infor-pwd">
+                            <input type="text" name="" id="" placeholder="请输入密码">
+                        </div>
+                        <div class="infor-box infor-btn">
+                            <div class="btn-submit">注册</div>
+                            <div class="register">登录</div>
+                        </div>
+                    </form>   
+                </div>
+                <!--  -->
             </div>  
             <div class="sign-method">
-                <div class="three-method">
+                <!-- <div class="three-method">
                     <img src="images/sign-methods.png">
                 </div>
                 <div class="three-sign-icon">
                     <div class="icons"><img src="images/icons_qq.png"></div>
                     <div class="icons"><img src="images/icons_weibo.png"></div>
                     <div class="icons icons-weixin"><img src="images/icons_weixin.png"></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -54,6 +104,25 @@
         $(function(){
             $(".btn-submit").on("click",function(){
                 window.open("broadcast.html");
+            })
+            $(".account-login").on("click",function(){
+                $(this).css("color","#13bb48").siblings().css("color","#ccc");
+                $(".sin-box").css("display","block");
+                $(".yanzheng-box").css("display","none");
+                $(".regist-box").css("display","none");
+            })
+            $(".Verify-log").on("click",function(){
+                $(this).css("color","#13bb48").siblings().css("color","#ccc");
+                $(".sin-box").css("display","none");
+                $(".yanzheng-box").css("display","block");
+                $(".regist-box").css("display","none");
+            })
+            $(".register").on("click",function(){
+                $(".sin-box").css("display","none");
+                $(".yanzheng-box").css("display","none");
+                $(".regist-box").css("display","block");
+                $(".log-methed").css("display","none");
+                
             })
         })
     </script>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="warp">
+		<div class="top">
+			<div class="icon-company">
+				<img src="images/company.png">
+			</div>
+			<div class="img-lf">
+				<img src="images/direct.png">
+			</div>
+		</div>
+		<div class="log">
+			<div class="log-tit">
+				<img src="images/log-tit.png">
+			</div>
+			<div class="login">
+				<div class="login-bj">
+					<img src="images/sign-bj.png">
+				</div>
+				<div class="login-box">
+					<form>
+						<div class="user-infor">
+	                        <label for="user-id">账号 :</label>
+	                        <input type="text"  name="user-id" id="user-id">
+	                    </div>
+	                    <div class="user-infor">
+	                        <label for="user-pwd">密码 :</label>
+	                        <input type="text" name="user-pwd" id="user-pwd">
+	                    </div>
+	                    <div class="btn">
+	                        <a href="javascript:;" class="btn-submit">登录</a>
+	                        <a href="javascript:;" class="register">注册</a>
+	                    </div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var dheight=$(document).height();
+			
+			$(".warp").css("height",dheight);
+			//console.log(dheight);
+			//console.log($(document).width());
+		})
+	</script>
+</body>
+</html>

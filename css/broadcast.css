@@ -240,4 +240,12 @@
 	.user-dis {
   		width: 83%;
   	}
+  	.int	roduce{padding: 0 0.4rem 0.4rem 0.4rem}
+  	.state {padding: 0.2rem 0;}
+  	.describe{padding-top: 0.2rem;}
+  	.company-logo,.content-box {margin-top: 0.25rem;}
+  	.content-box {padding: 0 0.3rem 0rem 0.3rem;}
+  	.buttons-pad{padding:  0;}
+  	.buttons-tab .button {height: 1.4rem;
+    line-height: 1.4rem;}
 } 
