@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection,email=no" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	  <title>个人中心</title>
+	  <title>个人资料</title>
 	  <!-- <link rel="Shortcut Icon" href="favicon.ico"> -->
 	  <link rel="stylesheet" href="../css/sm.css">
     <link rel="stylesheet" href="../css/common.css">  
@@ -29,8 +29,9 @@
           margin-right:0.5rem;
       }
       .right-icon img{vertical-align:middle;width: 0.5rem;}
-      .right-self { line-height: 2.7rem; }
+      .users .right-self { line-height: 2.7rem; }
       .left-icon span{vertical-align:middle; font-size: 0.6rem;}
+
       .logout-btn {
         position: absolute;
         width: 100%;
@@ -42,7 +43,29 @@
         padding: 0.8rem;
         text-align: center;
       }
-      .user-record,.user-likes,.user-comment,.user-collect{ margin-top:10px; }
+      .user-data{ margin-top:10px; padding:0 0.8rem; }
+      .form-contrl {
+        padding:0.6rem 0.4rem;
+        border-bottom: 1px solid #ccc;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+      }
+      .form-contrl label{
+        display: inline-block;
+        height: 1.2rem;
+        width: 30%;
+      }
+      .form-contrl input{
+        float: right;
+        text-align: right;
+        border: none;
+        outline: none;
+        width: 70%;
+        height: 1.2rem;
+        padding: 0;
+        margin: 0;
+      }
+      .form-contrl:nth-last-child(1){ border:none; }
     </style>  
 </head>
 <body>
@@ -53,26 +76,30 @@
           <div class="user-avatar-icon"><img src="../images/user-head.png"><span>小雨妈</span></div>
           <div class="right-icon right-self"><img src="../images/right-icon.png"></div>
         </div>
-        <div class="users user-record">
-          <div class="left-icon"><img src="../images/record-icon.png"><span>播放记录</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>
-        <div class="users user-likes">
-          <div class="left-icon"><img src="../images/likes-icon.png"><span>我赞过</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>
-        <div class="users user-comment">
-          <div class="left-icon"><img src="../images/comment-icon.png"><span>我评论过</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>
-        <div class="users user-collect">
-          <div class="left-icon"><img src="../images/collect-icon.png"><span>我的收藏</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
+        <div class="users user-data">
+          <form>
+            <div class="form-contrl">
+              <label for="user-name"><span>姓名：</span></label>
+              <input name="" id="user-name"  type="text" value="" placeholder="请输入姓名" >
+            </div>
+            <div class="form-contrl">
+              <label for="user-sex"><span>性别：</span></label>
+              <input name="" id="user-sex"  type="text" value="" placeholder="请输入姓别" >
+            </div>
+            <div class="form-contrl">
+              <label for="user-vocation"><span>职业：</span></label>
+              <input name="" id="user-vocation"  type="text" value="" placeholder="请输入您的职业" >
+            </div>
+            <div class="form-contrl">
+              <label for="user-phone"><span>手机号：</span></label>
+              <input name="" id="user-phone"  type="text" value="" placeholder="请输入手机号码" >
+            </div>
+            </form>
         </div>  
 
 
          <div class="logout-btn">
-          退出登录
+          下一步
         </div>
 
         </div>
