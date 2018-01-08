@@ -14,35 +14,9 @@
 	  <link rel="stylesheet" href="../css/tvonline.css"> 
     <style type="text/css">
       .users{ background: #fff;
-             padding: 0.4rem;
-            overflow: hidden;
+            height: 3rem;
+            border-bottom: 1px solid #ccc;
        }
-      /* .users:before,.users:after{ content: "";display: table; } */
-      .user-avatar-icon img{ width: 2.7rem; vertical-align:middle;
-          margin-right:0.5rem;  }
-      .user-avatar-icon span{vertical-align:middle; font-size: 0.6rem;}
-      .left-icon,.user-avatar-icon {float: left;}
-      .right-icon{ float: right;}
-      .left-icon img{
-          width: 1.4rem;  
-          vertical-align:middle;
-          margin-right:0.5rem;
-      }
-      .right-icon img{vertical-align:middle;width: 0.5rem;}
-      .right-self { line-height: 2.7rem; }
-      .left-icon span{vertical-align:middle; font-size: 0.6rem;}
-      .logout-btn {
-        position: absolute;
-        width: 100%;
-        bottom: 3rem;
-        left: 0;
-        font-size: 1rem;
-        color: #ff6f6f;
-        background: #fff;
-        padding: 0.8rem;
-        text-align: center;
-      }
-      .user-record,.user-likes,.user-comment,.user-collect{ margin-top:10px; }
     </style>  
 </head>
 <body>
@@ -50,30 +24,15 @@
         <div class="page page-current bro-page  ">
         <!-- 你的html代码 -->
         <div class="users user-title">
-          <div class="user-avatar-icon"><img src="../images/user-head.png"><span>小雨妈</span></div>
-          <div class="right-icon right-self"><img src="../images/right-icon.png"></div>
+          
         </div>
-        <div class="users user-record">
-          <div class="left-icon"><img src="../images/record-icon.png"><span>播放记录</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>
-        <div class="users user-likes">
-          <div class="left-icon"><img src="../images/likes-icon.png"><span>我赞过</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>
-        <div class="users user-comment">
-          <div class="left-icon"><img src="../images/comment-icon.png"><span>我评论过</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>
-        <div class="users user-collect">
-          <div class="left-icon"><img src="../images/collect-icon.png"><span>我的收藏</span></div>
-          <div class="right-icon"><img src="../images/right-icon.png"></div>
-        </div>  
+        <div class="users user-record"></div>
+        <div class="users user-likes"></div>
+        <div class="users user-comment"></div>
+        <div class="users user-collect"></div>  
 
 
-         <div class="logout-btn">
-          退出登录
-        </div>
+
 
         </div>
     </div>
